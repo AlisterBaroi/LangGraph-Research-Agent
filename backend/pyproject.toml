@@ -2,9 +2,7 @@
 name = "agent"
 version = "0.0.1"
 description = "Backend for the LangGraph agent"
-authors = [
-    { name = "Philipp Schmid", email = "schmidphilipp1995@gmail.com" },
-]
+authors = [{ name = "Alister Baroi", email = "alister.baroi@gmail.com" }]
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11,<4.0"
@@ -53,7 +51,4 @@ lint.ignore = [
 convention = "google"
 
 [dependency-groups]
-dev = [
-    "langgraph-cli[inmem]>=0.1.71",
-    "pytest>=8.3.5",
-]
+dev = ["langgraph-cli[inmem]>=0.1.71", "pytest>=8.3.5"]
