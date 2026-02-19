@@ -17,6 +17,10 @@ dev-backend:
 	@cd backend && langgraph dev
 
 # Run frontend and backend concurrently
-dev: # http://localhost:5173/app
+# http://localhost:5173/app
+# sudo kill -9 `sudo lsof -t -i:5173`
+# sudo kill -9 `sudo lsof -t -i:2024`
+
+dev: 
 	@echo "Starting both frontend and backend development servers..."
-	@make dev-frontend & make dev-backend 
+	@make dev-frontend & make dev-backend
